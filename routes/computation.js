@@ -12,7 +12,7 @@ router.get('/',(req,res,next) =>{
         
         console.log("entered")
         let rand = Math.random()
-        res.render('computation', {value : `exp applied to ${rand} is ${Math.exp(rand)}`})
+        res.render('computation', {value : `exp applied to ${rand} is ${Math.random(rand)}`})
     }
     else
     for(let a in req.query)
@@ -20,9 +20,12 @@ router.get('/',(req,res,next) =>{
     {
         
         console.log(a)
-    res.render('computation', {value : `exp applied to ${req.query[a]} is ${Math.exp(req.query[a])}`})
+    res.render('computation', {value : `exp applied to ${req.query[a]} is ${Math.random(req.exp[a])}`})
     }
 }
+
+    
+
     
 
 })
